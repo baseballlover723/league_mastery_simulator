@@ -1,7 +1,7 @@
 require 'sendgrid-ruby'
 class FeedbackController < ApplicationController
-  @@no_email = "feedback@leagueflashstats.com"
-  @@our_email = "leagueflashstats@gmail.com"
+  @@no_email = "feedback@leaguewardmaps.com"
+  @@our_email = "leaguewardmaps@gmail.com"
   @@client = nil
 
   def new
