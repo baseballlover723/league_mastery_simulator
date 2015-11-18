@@ -17,8 +17,9 @@ ActiveRecord::Schema.define(version: 20151118060915) do
     t.integer  "x",          limit: 4
     t.integer  "y",          limit: 4
     t.string   "rank",       limit: 255
-    t.integer  "score",      limit: 4
     t.string   "position",   limit: 255
+    t.integer  "wins",       limit: 4
+    t.integer  "losses",     limit: 4
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
