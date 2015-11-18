@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151118060915) do
+ActiveRecord::Schema.define(version: 20151118071244) do
 
   create_table "buckets", force: :cascade do |t|
     t.integer  "x",          limit: 4
@@ -20,6 +20,15 @@ ActiveRecord::Schema.define(version: 20151118060915) do
     t.string   "position",   limit: 255
     t.integer  "wins",       limit: 4
     t.integer  "losses",     limit: 4
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  create_table "feedbacks", force: :cascade do |t|
+    t.string   "name",       limit: 255
+    t.string   "from_email", limit: 255
+    t.string   "message",    limit: 255
+    t.string   "spam",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
