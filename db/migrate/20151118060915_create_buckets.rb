@@ -4,7 +4,7 @@ class CreateBuckets < ActiveRecord::Migration
       t.integer :x
       t.integer :y
       t.string :rank
-      t.string :position
+      t.string :color
       t.integer :wins
       t.integer :losses
       t.timestamps null: false
