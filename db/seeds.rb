@@ -21,7 +21,7 @@ RANKS.each do |rank|
         count += 1
       end
     end
-    puts "done with #{rank} #{position}s"
+    puts "done with #{rank} #{position}s, so far created #{count} buckets"
   end
 end
 puts "#{count} buckets created"
