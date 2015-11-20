@@ -13,6 +13,9 @@ COLORS = %w(yellow blue pink)
 count = 0
 
 puts "starting seeding"
+
+LastMatchId.create(id: 42, direction: 1)
+
 RANKS.each do |rank|
   COLORS.each do |color|
     (0...MAX_X).each do |x|
