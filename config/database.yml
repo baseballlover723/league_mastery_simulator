@@ -19,14 +19,14 @@ default: &default
 
 development:
   <<: *default
-  database: league_ward_map_development
+  database: league_mastery_simulator_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: league_ward_map_test
+  database: league_mastery_simulator_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: league_ward_map_production
-  username: league_ward_map
-  password: <%= ENV['LEAGUE_WARD_MAP_DATABASE_PASSWORD'] %>
+  database: league_mastery_simulator_production
+  username: league_mastery_simulator
+  password: <%= ENV['LEAGUE_MASTERY_SIMULATOR_DATABASE_PASSWORD'] %>
