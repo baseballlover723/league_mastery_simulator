@@ -1,1 +1,10 @@
 <p>This is the admin page, still yet to be completed</p>
+<h1>Admin#index</h1>
+<p>Find me in app/views/admin/index.html.erb</p>
+
+<%= form_tag do %>
+    <%= submit_tag("#{@start_stop_string} Polling") %>
+<% end %>
+<h2>current match id = <%= @last_match_id.id %></h2>
+<h2>Current direction = <%= @last_match_id.direction == 1 ? "up" : @last_match_id.direction == -1 ? "down" : "unknown direction" %></h2>
+<h2>db is clean: <%= @is_db_clean %></h2>
